@@ -122,15 +122,14 @@ In this presentation I'm selling 3 things:
   - summer schools
   - language schools
   - math camps
-  - yoga courses
-- This will just set the stage to make all real-life teaching modular, flexible and accessible through Solvio
+- This will just set the stage to make *all* real-life teaching modular, flexible and accessible through Solvio
 
 ---
 
 ## Hiring platform
 
 - We can leverage the platform to build a better hiring platform.
-- It is very hard to guage candidates today:
+- It is very hard to gauge candidates today:
   - Credentials differ around the world
   - Candidates often don't have any work to show
   - You can't filter for skills in a fine-grained manner - e.g. experience with certain frameworks
@@ -146,6 +145,12 @@ In this presentation I'm selling 3 things:
   - Commission from sale of offline courses
   - Income-share agreements
   - Commission from hiring
+
+---
+
+## Seed round
+
+We're raising $500k.
 
 ---
 
