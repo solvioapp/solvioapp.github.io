@@ -1,4 +1,4 @@
-<img src='./logo.png' class='logo'>
+<img src='assets/logo.png' class='logo'>
 
 Dom Teiml
 
@@ -32,7 +32,7 @@ In this presentation I'm selling 3 things:
 </div>
 <div>
 <figure>
-  <img src='./dom.jpg' alt='dom' class='dom-image'>
+  <img src='assets/dom.jpg' alt='dom' class='dom-image'>
   <figcaption>Wikipedia 2019</figcaption>
 </figure>
 </div>
