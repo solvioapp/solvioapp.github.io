@@ -5,8 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx reveal-md slides.md --theme simple --css assets/custom.css --template assets/slide-deck.html -w",
-    "print": "npx reveal-md slides.md --theme simple --css assets/custom.css --template assets/slide-deck.html --print slides.pdf"
+    "start": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html -w",
+    "static": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html --static --static-dirs=assets",
+    "print": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html --print slides.pdf"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run print"
+      "pre-push": "npm run static && npm run print"
     }
   }
 }

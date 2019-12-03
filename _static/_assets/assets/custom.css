@@ -1,0 +1,74 @@
+.reveal {
+  /* background-color: grey !important; */
+  font-size: 30px !important;
+  background-color: #eee !important;
+  letter-spacing: -1.5px !important;
+}
+
+.logo {
+  height: 360px !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  margin-top: -100px !important;
+  margin-bottom: -120px !important;
+}
+
+ul li {
+  line-height: 1.7 !important;
+}
+
+h1 {
+  text-align: left;
+}
+
+/* .short ul {
+  margin-top: -5px !important;
+}
+
+.short ul li, .short ul li p {
+  line-height: 0.4 !important;
+} */
+
+ul li ul li, ul li ul li p {
+  line-height: 0.9 !important;
+}
+
+/* .center {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+} */
+
+h2 {
+  background-color: orange !important;
+  padding: 20px 0 !important;
+  color: white !important;
+  font-weight: 800 !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.left p {
+  padding-left: 7.5px !important;
+}
+
+.two-columns {
+  display: flex !important;
+}
+
+.dom-image {
+  margin-top: -22.5px !important;
+  width: 450px !important;
+}
+
+figcaption {
+  font-size: 0.7em !important;
+}
+
+img {
+  border: none !important;
+}
