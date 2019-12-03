@@ -27,7 +27,7 @@ In this presentation I'm selling 3 things:
 - My background is 25% math, 25% econ and 50% software engineering
 - I taught math at universities in Europe & US, including UC Berkeley and Cornell
 - I worked in/started pre-seed startups, unicorns and small businesses
-- I travelled extensively in Asia, my hobbies are spiritual practices, year-round cycling and sauna.
+- I travelled extensively in India, my hobbies are meditation, year-round cycling and sauna.
 
 </div>
 <div>
@@ -150,7 +150,12 @@ In this presentation I'm selling 3 things:
 
 ## Seed round
 
-We're raising $500k.
+- We're raising `$`500k.
+- We plan to be remote-first, based in London, United Kingdom.
+- We plan to spend `$`320k on salaries of the core team, and `$`150k on tagging & categorizing learning materials for the search engine.
+- Assuming an annual salary of `$`40k (most compensation will be in stock for the seed team), this means 8 employees for 12 months.
+- Apart from me, that means about 5 engineers, a designer and a CMO.
+- This will allow us to build the search engine and the questionbank. This will be an interactive math proof checker and will revolutionize education of mathematics.
 
 ---
 
