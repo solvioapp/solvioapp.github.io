@@ -22,6 +22,10 @@ h1 {
   text-align: left;
 }
 
+.small-text {
+  margin-top: 10px;
+}
+
 /* .short ul {
   margin-top: -5px !important;
 }
