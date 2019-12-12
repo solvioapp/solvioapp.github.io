@@ -180,7 +180,7 @@ Apart from what was already mentioned, we plan to use:
 
 Assets:
 
-- `solvio.org` &nbsp; &nbsp; &nbsp; &nbsp; & &nbsp; &nbsp; &nbsp; &nbsp;`amos.app`
+- We own `solvio.org` &nbsp; &nbsp; &nbsp; &nbsp; & &nbsp; &nbsp; &nbsp; &nbsp;`amos.app`
 
 
 ---
