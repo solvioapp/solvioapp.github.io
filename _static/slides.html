@@ -20,10 +20,11 @@ Dom Teiml
 
 Dec 2019
 </script></section><section  data-markdown><script type="text/template">
-In this presentation I'm selling 3 things:
+In this presentation I'm selling 4 things:
 - the team
-- the problem
+- the problems
 - the solution
+- the roadmap
 </script></section><section  data-markdown><script type="text/template">
 # Team 👫
 </script></section><section  data-markdown><script type="text/template">
@@ -34,9 +35,12 @@ In this presentation I'm selling 3 things:
 <div class='two-columns'>
 <div>
 
-- My background is 25% math, 25% econ and 50% software engineering
-- I taught math at universities in Europe & US, including UC Berkeley and Cornell
-- I worked in/started pre-seed startups, unicorns and small businesses
+- I dropped out of MMathAndCompSci at Oxford
+- I ran a math camp company (https://oxsc.eu)
+- Later I did a personal coding bootcamp
+  - it was hard to find good resources
+  - that's where I got the idea of an aggregator of education resources
+- I then worked for 1.5 years at the blockchain unicorn Gnosis (https://gnosis.io)
 - I travelled extensively in India, my hobbies are meditation, year-round cycling and sauna.
 
 </div>
@@ -49,84 +53,76 @@ In this presentation I'm selling 3 things:
 </script></section><section  data-markdown><script type="text/template">
 ## Potentially full-time
 
-| Name   | Superpower            |
-| ------ | --------------------- |
-| Anh    | Mathematician, Python |
-| Dmitry | Front-end engineer    |
-| Martin | Business dev          |
-| Sam    | Formal methods        |
-| Sultan | Full-stack engineer   |
+| Name      | Superpower          |
+| --------- | ------------------- |
+| Alex      | Full-stack engineer |
+| Dmitry    | Front-end engineer  |
+| Ming Ming | UX for education    |
+| Sultan    | Full-stack engineer |
 </script></section><section  data-markdown><script type="text/template">
-# Problem 😕
+# Problems 😕
 </script></section><section  data-markdown><script type="text/template">
-- Current education system is very inflexible. If one applies to Oxford undergrad right now, they will begin studying in October 2021. That is *22 months* from now.
-- It is *de facto* impossible to get credentials for informal education such as self-learning.
-- Finding good materials/resources on the internet is difficult. We still lack an efficient aggregator for education content.
-- Education in English is overpriced in Europe, and education *in genera*l is overpriced in US.
-  
-  and many many others.
+## Problem #1 
+
+- A lot of people are using the internet for learning
+- There doesn't exist a place to view what your friends, colleagues and people you admire are learning
+  - [Goodreads](https://goodreads.com) is the closest, but that is only for books
+</script></section><section  data-markdown><script type="text/template">
+## Problem #2
+
+- Finding good resources on the internet is difficult. We still lack an efficient aggregator for education content.
 </script></section><section  data-markdown><script type="text/template">
 # Solution 😌
 </script></section><section  data-markdown><script type="text/template">
-- Our goal is to create an end-to-end education system for the 21st century.
-
-- One that would be recognized by governments for purposes of taxes, immigration...
-  - We're the first project in history with this aim.
-
-- We also think the best way to bootstrap such a proj is with a B2C app.
-
-- I will now describe the chronology of features (might change subject to user interviews & iteration).
+- The goal is to create a social network & search engine for learning resources
+- We'll bootstrap this by building *a social network for engineers*.
 </script></section><section  data-markdown><script type="text/template">
-## Search engine for learning resources
+## Products
 
-- We'll start by developing a search engine for learning resources.
-- Unlike Google, it will be richly customizable
-- Unlike Udemy/Coursera, it will be not be platform-specific.
-- It will include:
-  - podcasts
-  - Youtube playlists
-  - documentaries/docuseries
-  - MOOCs
-  - books
-
-  and many others.
+- a web app - PWA technology will allow us to make it native for desktop & Android with just a little addition to the codebase.
+   - PWA doesn't have full support on iOS
+- a Chrome extension - will run on any Chromium browser and Firefox.
+  - users of Safari may add a bookmark to their bookmarks bar with the same functionality.
 </script></section><section  data-markdown><script type="text/template">
-## Credentialing platform
+## Features
 
-- Currently universities bundle content with credentials.
-  - Our aim is to modularize content (both offline & online) and centralize credentialing
-- We'll build a platform where anyone can submit a work like essay, Github project or other
-  - They get matched for a 1-hour recorded video
-  - Others can rate how well they demonstrated understanding of multiple topics
-- Our goal is to create a cheaper, more flexible, and less cheatable credentialization than the legacy system.
+There are four main tenets:
+
+1. Users can follow others, or follow just different `tags` of others, e.g. `Javascript`. Or just the tags themselves...
+2. Users can tag interesting material with tags such as `Javascript`, `React`, `PWA`.
+3. Users will get reputation for these contributions
+4. This data will feed into a graph-based search engine for learning resources.
 </script></section><section  data-markdown><script type="text/template">
-## Questionbank
+That was a lot so let's unpack
 
-- As surprising as it sounds, there actually don't exist good tools for learning software engineering or the sciences.
-- We'll build an offline-first, in-editor tool for learning & demonstrating knowledge of popular languages and libraries
-- We'll also build a proof-checker to enable interactive math lessons for all skill-levels.
+- We take learning resources very broadly, it includes blog articles, online courses, academic papers, podcasts...
+- Just as the current MVP, we'll be using a graph database (Neo4J) and graph query language (GraphQL).
+  - That allows us to do efficient graph lookups - e.g. show me all resources that use `React`, `Nextjs` and `Typescript`
+- We will try to close popular open-source teams such as Babel, Webpack and React to use this
+  - Customer interviews have shown that ppl will use this if OSS celebrities are there.
 </script></section><section  data-markdown><script type="text/template">
-## Offline courses
-
-- Again, there doesn't exist an Uber for offline courses.
-- At this stage we can leverage our traction to finally make this happen.
-- The first partners will likely be existing courses
-  - summer schools
-  - language schools
-  - math camps
-- This will just set the stage to make *all* real-life teaching modular, flexible and accessible through Solvio
+|                                                                              | Google                                      | Solvio |
+| ---------------------------------------------------------------------------- | ------------------------------------------- | ------ |
+| Full-text search                                                             | ✓ <small class="small-text">(for public content)</small> | ✗      |
+| Only show learning-resources                                                 | ✗                                           | ✓      |
+| Order resources wrt. resource's <br> prerequisites & user's learning profile | ✗                                           | ✓      |
+| Customize path with length, format,<br> language and other metadata          | ✗                                           | ✓      |
+| Tracks with different mental difficulty                                      | ✗                                           | ✓      |
+| Explore topic graph                                                          | ✗                                           | ✓      |
+| Extra content (community-generated)                                       | ✗                                           | ✓      |
+| Get credentials                                                              | ✗                                           | ✓      |
+| Be able to save learning paths                                               | ✗                                           | ✓      |
+| Get notifications to follow learning path                                    | ✗                                           | ✓      |
 </script></section><section  data-markdown><script type="text/template">
-## Hiring platform
-
-- We can leverage the platform to build a better hiring platform.
-- It is very hard to gauge candidates today:
-  - Credentials differ around the world
-  - Candidates often don't have any work to show
-  - You can't filter for skills in a fine-grained manner - e.g. experience with certain frameworks
+# Vision 🚀
+</script></section><section  data-markdown><script type="text/template">
+- After expanding from SE to other engineering domains, we'll expand to all topics
+- We can then leverage this search engine to include offline courses (short-term courses), attaining credentials for self-learning and a better hiring platform for businesses.
+- Our ultimate goal is to create an education system that would be recognized by governments for purposes of taxes, immigration etc.
 </script></section><section  data-markdown><script type="text/template">
 ## Monetization
 
-- Due to the ambitions of this project, our main focus is on the execution - making a domain-specific search engine that would give better results than `Google`
+- Due to the ambitions of this project, our main focus is on the execution
 - If this plan succeeds, a small capture margin of the value created will be huge absolute wise
 - Examples where value can be captured:
   - Small yearly/lifetime fee for personalized searches
@@ -136,20 +132,28 @@ In this presentation I'm selling 3 things:
 </script></section><section  data-markdown><script type="text/template">
 ## Seed round
 
-- We're raising `$`500k.
-- We plan to be remote-first, based in London, United Kingdom.
-- We plan to spend `$`320k on salaries of the core team, and `$`150k on tagging & categorizing learning materials for the search engine.
-- Assuming an annual salary of `$`40k (most compensation will be in stock for the seed team), this means 8 employees for 12 months.
-- Apart from me, that means about 5 engineers, a designer and a CMO.
-- This will allow us to build the search engine and the questionbank. This will be an interactive math proof checker and will revolutionize education of mathematics.
+- We're raising $150k.
+- We plan to be remote-first with all employees based in Europe/Western Russia
+- With that we can have 3.5 FTE (full-time equivalent employees), e.g. myself, Sultan, Dmitry and Ming Ming.
+- I will focus on sales & growth and Ming Ming on UX (a superb UX is very important for this project)
+</script></section><section  data-markdown><script type="text/template">
+## Roadmap
+
+- Month 1: Onboard team, pick technologies, begin working.
+- Month 2: MVP which has reputation and search
+- Month 3: Add social features, begin to use it internally
+  - This can be done with little engineering effort. No uploading of custom data, no news feed - users get access to content through daily emails or automatic posting to Slack through webhooks. We're not making a `Facebook` competitor, it's all about the learning.
+- Month 4: Close 10 teams
+- Month 5: Close 100 teams.
+- Month 6+: Expand to other engineering domains (and eventually to all topics). Solvio becomes the **go-to** app for *any* curious soul!
 </script></section><section  data-markdown><script type="text/template">
 <div class='left'>
 
-# Demo
+# Discussion
 
-What else can I say for me to be able
+What else can I say for me to
 <br>
-to show you what we have, so far? 
+be able to tell you more?
 
 </div></script></section></div>
     </div>

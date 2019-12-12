@@ -169,6 +169,22 @@ That was a lot so let's unpack
 
 ---
 
+## Technologies
+
+Apart from what was already mentioned, we plan to use:
+
+- `Nextjs` for lightning-fast apps pre-rendered by our server
+- `Material UI` for super fast UI development
+- `Heroku` for an easy deployment and hosting solution
+- `React Native` to re-use our web code on mobile
+
+Assets:
+
+- `solvio.org` &nbsp; &nbsp; &nbsp; &nbsp; & &nbsp; &nbsp; &nbsp; &nbsp;`amos.app`
+
+
+---
+
 <div class='left'>
 
 # Discussion

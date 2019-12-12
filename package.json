@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html -w",
     "static": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html --static --static-dirs=assets",
-    "print": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html --print slides2.pdf"
+    "print": "npx reveal-md slides.md --theme white --css assets/custom.css --template assets/slide-deck.html --print slides2-read.pdf"
   },
   "repository": {
     "type": "git",
