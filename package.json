@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/solviofoundation/solviofoundation.github.io#readme",
   "dependencies": {
-    "reveal-md": "^3.4.1"
+    "reveal-md": "^5.4.0"
   },
   "devDependencies": {
     "husky": "^3.1.0"
